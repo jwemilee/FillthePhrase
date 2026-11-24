@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Small Talk GO</title>
+<title>Fill the Phrase</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Doto:wght@800&display=swap">
 <style>
@@ -115,7 +115,7 @@ function overlay(html){const o=document.createElement("div");o.className="overla
 function clearOv(){arena.querySelectorAll(".overlay").forEach(o=>o.remove())}
 function showStart(){
   $("ko").textContent="";$("en").textContent="";hud();
-  overlay('<h1>Small Talk GO 🚩</h1><p>한 번에 한 문장씩 나옵니다. 제한 시간 안에 빈칸을 영어로 입력하세요. 5문제를 풀면 스테이지 클리어! 스테이지가 올라갈수록 빈칸이 한 단어 → 구 → 거의 문장 전체로 길어지고, 제한 시간도 그에 맞게 늘어납니다.<br>틀리면 시간이 2초 줄고, 시간 초과하면 목숨이 줄어요 (목숨 3개).</p><button id="s">출발!</button>');
+  overlay('<h1>Fill the Phrase 🚩</h1><p>한 번에 한 문장씩 나옵니다. 제한 시간 안에 빈칸을 영어로 입력하세요. 5문제를 풀면 스테이지 클리어! 스테이지가 올라갈수록 빈칸이 한 단어 → 구 → 거의 문장 전체로 길어지고, 제한 시간도 그에 맞게 늘어납니다.<br>틀리면 시간이 2초 줄고, 시간 초과하면 목숨이 줄어요 (목숨 3개).</p><button id="s">출발!</button>');
   $("s").onclick=start;
 }
 function start(){
